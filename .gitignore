@@ -1,7 +1,8 @@
 *.pyc
 __pycache__
-htmlcov
+.pytest_cache
 .coverage
+htmlcov
 venv
 bin
 lib
