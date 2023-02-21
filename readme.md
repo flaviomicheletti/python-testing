@@ -1,28 +1,20 @@
+# Python Testing
 
-https://www.datacamp.com/tutorial/decorators-python
 
+## Instalation
 
-# Instalation
-
-__venv:__
-
+    # venv
     python3 -m venv .venv && . .venv/bin/activate
-
     deactivate
 
-## Install
-
-In both environments you will need to install it only once.
-
-    // in the first time
+    # deps
     pip install -U pytest
     pip install pytest-cov
 
 ## Running
 
+    # tests
     pytest
 
-
-## Coverage
-
+    # coverage
     pytest --cov . --cov-report html

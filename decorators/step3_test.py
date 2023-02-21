@@ -17,19 +17,19 @@ def split_string(function):
 
 
 def say_hi():
-    return "hello there"
+    return "hello there-1"
 
 
 @uppercase_decorator
 def say_hi():
-    return "hello there"
+    return "hello there-2"
 
 
 @split_string
 @uppercase_decorator
 def say_hi():
-    return "hello there"
+    return "hello there-3"
 
 
 def test_step3():
-    assert ["HELLO", "THERE"] == say_hi()
+    assert ["HELLO", "THERE-3"] == say_hi()
