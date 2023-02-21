@@ -6,8 +6,7 @@ https://www.datacamp.com/tutorial/decorators-python
 
 __venv:__
 
-    python3 -m venv venv
-    . venv/bin/activate
+    python3 -m venv .venv && . .venv/bin/activate
 
     deactivate
 
