@@ -8,6 +8,16 @@
     mypy my.py
 
 
-## see also
+## Try My.py
+
+    cd types_hints
+    pip install -r requirements.txt
+    mypy try-my.py
+
+    try-my.py:6: error: Argument 1 to "add_numbers" has incompatible type "float"; expected "int"  [arg-type]
+    try-my.py:7: error: Argument 1 to "add_numbers" has incompatible type "str"; expected "int"  [arg-type]
+    try-my.py:7: error: Argument 2 to "add_numbers" has incompatible type "str"; expected "int"  [arg-type]    
+
+## See Also
 
 - https://realpython.com/python-type-checking/
