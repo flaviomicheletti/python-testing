@@ -62,9 +62,9 @@ def test_args_kwargs3():
         separator = kwargs.get("separator", " ")
         return separator.join(args)
 
-        assert "hello world" == concatenate("hello", "world")
+    assert "hello world" == concatenate("hello", "world")
 
-        assert "hello-world" == concatenate("hello", "world", separator="-")
+    assert "hello-world" == concatenate("hello", "world", separator="-")
 
-        expected = "hello\nworld\nhow\nare\nyou"
-        assert expected == concatenate("hello", "world", "how", "are", "you", separator="\n")
+    expected = "hello\nworld\nhow\nare\nyou"
+    assert expected == concatenate("hello", "world", "how", "are", "you", separator="\n")
