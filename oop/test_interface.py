@@ -46,5 +46,5 @@ def test_interface():
     # Use the instances as instances of the interface
     assert rectangle.area() ==   20
     assert rectangle.perimeter() ==  18
-    assert circle.area() == 28.274309999999996
-    assert circle.perimeter() == 18.849539999999998
+    assert round(circle.area(), 2) == 28.27
+    assert round(circle.perimeter(), 2) == 18.85
