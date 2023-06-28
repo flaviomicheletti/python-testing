@@ -10,11 +10,11 @@ from abc import ABC, abstractmethod
 class Shape(ABC):
     @abstractmethod
     def area(self):
-        pass
+        pass  # pragma: no cover
 
     @abstractmethod
     def perimeter(self):
-        pass
+        pass  # pragma: no cover
 
 # Implement classes that adhere to the interface
 class Rectangle(Shape):

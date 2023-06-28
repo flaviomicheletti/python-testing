@@ -22,6 +22,11 @@ class Square(Shape):
         return self.side**2
 
 
+def test_shape():
+    shape = Shape()
+    assert shape.area() is None
+
+
 def test_circle_area():
     c = Circle(5)
     assert math.isclose(c.area(), 78.5398, rel_tol=1e-3)
