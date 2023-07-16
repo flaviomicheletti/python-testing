@@ -39,3 +39,21 @@ def test_reprexample():
     assert bin(10) == "0b1010"
     assert chr(65) == "A"
     assert ord("A") == 65
+
+
+"""
+The `__repr__()` method is used to define the string representation of the 
+object that can be used to recreate the object. In this case, it returns a 
+string in the format "Point(x, y)", where `x` and `y` are the coordinates of 
+the point. 
+
+The `__str__()` method defines a human-readable string representation of the 
+object. It returns a string in the format "(x, y)", where `x` and `y` are the 
+coordinates of the point. 
+
+The `__format__()` method allows customization of the string representation 
+using the `format()` function. In this case, it checks the `format_spec` 
+parameter and if it is "0.2f", it returns the formatted string representation 
+of the point with two decimal places. Otherwise, it returns the default 
+string representation. 
+"""
